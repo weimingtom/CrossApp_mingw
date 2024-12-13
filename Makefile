@@ -36,11 +36,13 @@ CPPFLAGS += -ICrossApp/platform/third_party/win32/pthread
 CPPFLAGS += -ICrossApp/platform/third_party/win32/OGLES
 CPPFLAGS += -ICrossApp/platform/third_party/win32/freetype
 
-LDFLAGS := -LCrossApp/platform/third_party/win32/libraries -lfreetype -lglew32 -lwebp -ljpeg -lpng -lbz2 -lz -lpthreadGC2
+LDFLAGS := -LCrossApp/platform/third_party/win32/libraries -lfreetype -lglew32 -lwebp -ljpeg -lpng -lbz2 -lz 
+#-lpthreadGC2
 LDFLAGS	+= -lglaux -lglu32 -lopengl32 -lwinmm -lgdi32 -lcomdlg32
 LDFLAGS += -lavicap32 -lws2_32 -lmingw32 -lpsapi -ladvapi32 
 LDFLAGS += -lshell32 -lwinmm -lgdi32 
-LDFLAGS += -lm -lpthreadGC2 -lws2_32 -lstdc++
+LDFLAGS += -lm -lws2_32 -lstdc++
+#-lpthreadGC2 
 
 OBJS := 
 
